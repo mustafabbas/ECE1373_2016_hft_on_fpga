@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Thu May  4 15:28:46 2017
+# Process ID: 2657
+# Current directory: /home/savi/team-hft/base-proj/team_hls/hft_10g/srcs/hls/udpPortReq/soln/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/savi/team-hft/base-proj/team_hls/hft_10g/srcs/hls/udpPortReq/soln/impl/ip/vivado.log
+# Journal file: /home/savi/team-hft/base-proj/team_hls/hft_10g/srcs/hls/udpPortReq/soln/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="toe" xd:componentRef="toe" xd:initiationInterval="6" xd:clockPeriod="6.660000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="ipRxData.data" xd:originalName="ipRxData" xd:direction="in" xd:interfaceRef="s_axis_tcp_data" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="ipRxData.keep" xd:originalName="ipRxData" xd:direction="in" xd:interfaceRef="s_axis_tcp_data" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="ipRxData.last" xd:originalName="ipRxData" xd:direction="in" xd:interfaceRef="s_axis_tcp_data" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferWriteStatus.tag" xd:originalName="rxBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_rxwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="3:0" xd:dataWidth="4"/>
+  <xd:arg xd:name="rxBufferWriteStatus.interr" xd:originalName="rxBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_rxwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="4:4" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferWriteStatus.decerr" xd:originalName="rxBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_rxwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="5:5" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferWriteStatus.slverr" xd:originalName="rxBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_rxwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="6:6" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferWriteStatus.okay" xd:originalName="rxBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_rxwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="7:7" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferWriteStatus.tag" xd:originalName="txBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_txwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="3:0" xd:dataWidth="4"/>
+  <xd:arg xd:name="txBufferWriteStatus.interr" xd:originalName="txBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_txwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="4:4" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferWriteStatus.decerr" xd:originalName="txBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_txwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="5:5" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferWriteStatus.slverr" xd:originalName="txBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_txwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="6:6" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferWriteStatus.okay" xd:originalName="txBufferWriteStatus" xd:direction="in" xd:interfaceRef="s_axis_txwrite_sts" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="7:7" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferReadData.data" xd:originalName="rxBufferReadData" xd:direction="in" xd:interfaceRef="s_axis_rxread_data" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="rxBufferReadData.keep" xd:originalName="rxBufferReadData" xd:direction="in" xd:interfaceRef="s_axis_rxread_data" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="rxBufferReadData.last" xd:originalName="rxBufferReadData" xd:direction="in" xd:interfaceRef="s_axis_rxread_data" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferReadData.data" xd:originalName="txBufferReadData" xd:direction="in" xd:interfaceRef="s_axis_txread_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:0" xd:dataWidth="64"/>
+  <xd:arg xd:name="txBufferReadData.keep" xd:originalName="txBufferReadData" xd:direction="in" xd:interfaceRef="s_axis_txread_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="71:64" xd:dataWidth="8"/>
+  <xd:arg xd:name="txBufferReadData.last" xd:originalName="txBufferReadData" xd:direction="in" xd:interfaceRef="s_axis_txread_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="72:72" xd:dataWidth="1"/>
+  <xd:arg xd:name="ipTxData.data" xd:originalName="ipTxData" xd:direction="out" xd:interfaceRef="m_axis_tcp_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:0" xd:dataWidth="64"/>
+  <xd:arg xd:name="ipTxData.keep" xd:originalName="ipTxData" xd:direction="out" xd:interfaceRef="m_axis_tcp_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="71:64" xd:dataWidth="8"/>
+  <xd:arg xd:name="ipTxData.last" xd:originalName="ipTxData" xd:direction="out" xd:interfaceRef="m_axis_tcp_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="72:72" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferWriteCmd.bbt" xd:originalName="rxBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="22:0" xd:dataWidth="23"/>
+  <xd:arg xd:name="rxBufferWriteCmd.type" xd:originalName="rxBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="23:23" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferWriteCmd.dsa" xd:originalName="rxBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="29:24" xd:dataWidth="6"/>
+  <xd:arg xd:name="rxBufferWriteCmd.eof" xd:originalName="rxBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="30:30" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferWriteCmd.drr" xd:originalName="rxBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:31" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferWriteCmd.saddr" xd:originalName="rxBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="rxBufferWriteCmd.tag" xd:originalName="rxBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="67:64" xd:dataWidth="4"/>
+  <xd:arg xd:name="rxBufferWriteCmd.rsvd" xd:originalName="rxBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="71:68" xd:dataWidth="4"/>
+  <xd:arg xd:name="rxBufferReadCmd.bbt" xd:originalName="rxBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_rxread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="22:0" xd:dataWidth="23"/>
+  <xd:arg xd:name="rxBufferReadCmd.type" xd:originalName="rxBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_rxread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="23:23" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferReadCmd.dsa" xd:originalName="rxBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_rxread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="29:24" xd:dataWidth="6"/>
+  <xd:arg xd:name="rxBufferReadCmd.eof" xd:originalName="rxBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_rxread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="30:30" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferReadCmd.drr" xd:originalName="rxBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_rxread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:31" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxBufferReadCmd.saddr" xd:originalName="rxBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_rxread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="rxBufferReadCmd.tag" xd:originalName="rxBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_rxread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="67:64" xd:dataWidth="4"/>
+  <xd:arg xd:name="rxBufferReadCmd.rsvd" xd:originalName="rxBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_rxread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="71:68" xd:dataWidth="4"/>
+  <xd:arg xd:name="txBufferWriteCmd.bbt" xd:originalName="txBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_txwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="22:0" xd:dataWidth="23"/>
+  <xd:arg xd:name="txBufferWriteCmd.type" xd:originalName="txBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_txwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="23:23" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferWriteCmd.dsa" xd:originalName="txBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_txwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="29:24" xd:dataWidth="6"/>
+  <xd:arg xd:name="txBufferWriteCmd.eof" xd:originalName="txBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_txwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="30:30" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferWriteCmd.drr" xd:originalName="txBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_txwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:31" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferWriteCmd.saddr" xd:originalName="txBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_txwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="txBufferWriteCmd.tag" xd:originalName="txBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_txwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="67:64" xd:dataWidth="4"/>
+  <xd:arg xd:name="txBufferWriteCmd.rsvd" xd:originalName="txBufferWriteCmd" xd:direction="out" xd:interfaceRef="m_axis_txwrite_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="71:68" xd:dataWidth="4"/>
+  <xd:arg xd:name="txBufferReadCmd.bbt" xd:originalName="txBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_txread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="22:0" xd:dataWidth="23"/>
+  <xd:arg xd:name="txBufferReadCmd.type" xd:originalName="txBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_txread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="23:23" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferReadCmd.dsa" xd:originalName="txBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_txread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="29:24" xd:dataWidth="6"/>
+  <xd:arg xd:name="txBufferReadCmd.eof" xd:originalName="txBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_txread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="30:30" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferReadCmd.drr" xd:originalName="txBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_txread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:31" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferReadCmd.saddr" xd:originalName="txBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_txread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="txBufferReadCmd.tag" xd:originalName="txBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_txread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="67:64" xd:dataWidth="4"/>
+  <xd:arg xd:name="txBufferReadCmd.rsvd" xd:originalName="txBufferReadCmd" xd:direction="out" xd:interfaceRef="m_axis_txread_cmd" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="71:68" xd:dataWidth="4"/>
+  <xd:arg xd:name="rxBufferWriteData.data" xd:originalName="rxBufferWriteData" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_data" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="rxBufferWriteData.keep" xd:originalName="rxBufferWriteData" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_data" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="rxBufferWriteData.last" xd:originalName="rxBufferWriteData" xd:direction="out" xd:interfaceRef="m_axis_rxwrite_data" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="txBufferWriteData.data" xd:originalName="txBufferWriteData" xd:direction="out" xd:interfaceRef="m_axis_txwrite_data" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="txBufferWriteData.keep" xd:originalName="txBufferWriteData" xd:direction="out" xd:interfaceRef="m_axis_txwrite_data" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="txBufferWriteData.last" xd:originalName="txBufferWriteData" xd:direction="out" xd:interfaceRef="m_axis_txwrite_data" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="sessionLookup_rsp.source" xd:originalName="sessionLookup_rsp" xd:direction="in" xd:interfaceRef="s_axis_session_lup_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1"/>
+  <xd:arg xd:name="sessionLookup_rsp.sessionID" xd:originalName="sessionLookup_rsp" xd:direction="in" xd:interfaceRef="s_axis_session_lup_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="14:1" xd:dataWidth="14"/>
+  <xd:arg xd:name="sessionLookup_rsp.hit" xd:originalName="sessionLookup_rsp" xd:direction="in" xd:interfaceRef="s_axis_session_lup_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:15" xd:dataWidth="1"/>
+  <xd:arg xd:name="sessionUpdate_rsp.source" xd:originalName="sessionUpdate_rsp" xd:direction="in" xd:interfaceRef="s_axis_session_upd_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1"/>
+  <xd:arg xd:name="sessionUpdate_rsp.op" xd:originalName="sessionUpdate_rsp" xd:direction="in" xd:interfaceRef="s_axis_session_upd_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="1:1" xd:dataWidth="1"/>
+  <xd:arg xd:name="sessionUpdate_rsp.sessionID" xd:originalName="sessionUpdate_rsp" xd:direction="in" xd:interfaceRef="s_axis_session_upd_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:2" xd:dataWidth="14"/>
+  <xd:arg xd:name="sessionLookup_req.source" xd:originalName="sessionLookup_req" xd:direction="out" xd:interfaceRef="m_axis_session_lup_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1"/>
+  <xd:arg xd:name="sessionLookup_req.key.myIp" xd:originalName="sessionLookup_req" xd:direction="out" xd:interfaceRef="m_axis_session_lup_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="32:1" xd:dataWidth="32"/>
+  <xd:arg xd:name="sessionLookup_req.key.theirIp" xd:originalName="sessionLookup_req" xd:direction="out" xd:interfaceRef="m_axis_session_lup_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="64:33" xd:dataWidth="32"/>
+  <xd:arg xd:name="sessionLookup_req.key.myPort" xd:originalName="sessionLookup_req" xd:direction="out" xd:interfaceRef="m_axis_session_lup_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="80:65" xd:dataWidth="16"/>
+  <xd:arg xd:name="sessionLookup_req.key.theirPort" xd:originalName="sessionLookup_req" xd:direction="out" xd:interfaceRef="m_axis_session_lup_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="96:81" xd:dataWidth="16"/>
+  <xd:arg xd:name="sessionUpdate_req.source" xd:originalName="sessionUpdate_req" xd:direction="out" xd:interfaceRef="m_axis_session_upd_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1"/>
+  <xd:arg xd:name="sessionUpdate_req.op" xd:originalName="sessionUpdate_req" xd:direction="out" xd:interfaceRef="m_axis_session_upd_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="1:1" xd:dataWidth="1"/>
+  <xd:arg xd:name="sessionUpdate_req.value" xd:originalName="sessionUpdate_req" xd:direction="out" xd:interfaceRef="m_axis_session_upd_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:2" xd:dataWidth="14"/>
+  <xd:arg xd:name="sessionUpdate_req.key.myIp" xd:originalName="sessionUpdate_req" xd:direction="out" xd:interfaceRef="m_axis_session_upd_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="sessionUpdate_req.key.theirIp" xd:originalName="sessionUpdate_req" xd:direction="out" xd:interfaceRef="m_axis_session_upd_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="79:48" xd:dataWidth="32"/>
+  <xd:arg xd:name="sessionUpdate_req.key.myPort" xd:originalName="sessionUpdate_req" xd:direction="out" xd:interfaceRef="m_axis_session_upd_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:80" xd:dataWidth="16"/>
+  <xd:arg xd:name="sessionUpdate_req.key.theirPort" xd:originalName="sessionUpdate_req" xd:direction="out" xd:interfaceRef="m_axis_session_upd_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="111:96" xd:dataWidth="16"/>
+  <xd:arg xd:name="listenPortReq" xd:originalName="listenPortReq" xd:direction="in" xd:interfaceRef="s_axis_listen_port_req" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxDataReq.sessionID" xd:originalName="rxDataReq" xd:direction="in" xd:interfaceRef="s_axis_rx_data_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxDataReq.length" xd:originalName="rxDataReq" xd:direction="in" xd:interfaceRef="s_axis_rx_data_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="openConnReq.ip_address" xd:originalName="openConnReq" xd:direction="in" xd:interfaceRef="s_axis_open_conn_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:0" xd:dataWidth="32"/>
+  <xd:arg xd:name="openConnReq.ip_port" xd:originalName="openConnReq" xd:direction="in" xd:interfaceRef="s_axis_open_conn_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:32" xd:dataWidth="16"/>
+  <xd:arg xd:name="closeConnReq" xd:originalName="closeConnReq" xd:direction="in" xd:interfaceRef="s_axis_close_conn_req" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="txDataReqMeta" xd:originalName="txDataReqMeta" xd:direction="in" xd:interfaceRef="s_axis_tx_data_req_metadata" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="txDataReq.data" xd:originalName="txDataReq" xd:direction="in" xd:interfaceRef="s_axis_tx_data_req" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="txDataReq.keep" xd:originalName="txDataReq" xd:direction="in" xd:interfaceRef="s_axis_tx_data_req" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="txDataReq.last" xd:originalName="txDataReq" xd:direction="in" xd:interfaceRef="s_axis_tx_data_req" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="listenPortRsp" xd:originalName="listenPortRsp" xd:direction="out" xd:interfaceRef="m_axis_listen_port_rsp" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="notification.sessionID" xd:originalName="notification" xd:direction="out" xd:interfaceRef="m_axis_notification" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="notification.length" xd:originalName="notification" xd:direction="out" xd:interfaceRef="m_axis_notification" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="notification.ipAddress" xd:originalName="notification" xd:direction="out" xd:interfaceRef="m_axis_notification" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="notification.dstPort" xd:originalName="notification" xd:direction="out" xd:interfaceRef="m_axis_notification" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="79:64" xd:dataWidth="16"/>
+  <xd:arg xd:name="notification.closed" xd:originalName="notification" xd:direction="out" xd:interfaceRef="m_axis_notification" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="80:80" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxDataRspMeta" xd:originalName="rxDataRspMeta" xd:direction="out" xd:interfaceRef="m_axis_rx_data_rsp_metadata" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxDataRsp.data" xd:originalName="rxDataRsp" xd:direction="out" xd:interfaceRef="m_axis_rx_data_rsp" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="rxDataRsp.keep" xd:originalName="rxDataRsp" xd:direction="out" xd:interfaceRef="m_axis_rx_data_rsp" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="rxDataRsp.last" xd:originalName="rxDataRsp" xd:direction="out" xd:interfaceRef="m_axis_rx_data_rsp" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="openConnRsp.sessionID" xd:originalName="openConnRsp" xd:direction="out" xd:interfaceRef="m_axis_open_conn_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="openConnRsp.success" xd:originalName="openConnRsp" xd:direction="out" xd:interfaceRef="m_axis_open_conn_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="16:16" xd:dataWidth="1"/>
+  <xd:arg xd:name="txDataRsp" xd:originalName="txDataRsp" xd:direction="out" xd:interfaceRef="m_axis_tx_data_rsp" xd:busTypeRef="axis" xd:dataWidth="17"/>
+  <xd:arg xd:name="regIpAddress" xd:originalName="regIpAddress" xd:direction="in" xd:interfaceRef="regIpAddress_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="relSessionCount" xd:originalName="relSessionCount" xd:direction="out" xd:interfaceRef="relSessionCount_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:arg xd:name="regSessionCount" xd:originalName="regSessionCount" xd:direction="out" xd:interfaceRef="regSessionCount_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="16"/>
+  <xd:latencyEstimates xd:best-case="5" xd:worst-case="5" xd:average-case="5"/>
+  <xd:resourceEstimates xd:LUT="37601" xd:FF="13859" xd:BRAM="552" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="mac_ip_encode" xd:componentRef="mac_ip_encode" xd:initiationInterval="3" xd:clockPeriod="6.660000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="dataIn.data" xd:originalName="dataIn" xd:direction="in" xd:interfaceRef="dataIn" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="dataIn.keep" xd:originalName="dataIn" xd:direction="in" xd:interfaceRef="dataIn" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="dataIn.last" xd:originalName="dataIn" xd:direction="in" xd:interfaceRef="dataIn" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="arpTableIn.macAddress" xd:originalName="arpTableIn" xd:direction="in" xd:interfaceRef="arpTableIn_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:0" xd:dataWidth="48"/>
+  <xd:arg xd:name="arpTableIn.hit" xd:originalName="arpTableIn" xd:direction="in" xd:interfaceRef="arpTableIn_V" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="48:48" xd:dataWidth="1"/>
+  <xd:arg xd:name="dataOut.data" xd:originalName="dataOut" xd:direction="out" xd:interfaceRef="dataOut" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="dataOut.keep" xd:originalName="dataOut" xd:direction="out" xd:interfaceRef="dataOut" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="dataOut.last" xd:originalName="dataOut" xd:direction="out" xd:interfaceRef="dataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="arpTableOut" xd:originalName="arpTableOut" xd:direction="out" xd:interfaceRef="arpTableOut_V_V" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="regSubNetMask" xd:originalName="regSubNetMask" xd:direction="in" xd:interfaceRef="regSubNetMask_V" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="regDefaultGateway" xd:originalName="regDefaultGateway" xd:direction="in" xd:interfaceRef="regDefaultGateway_V" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="myMacAddress" xd:originalName="myMacAddress" xd:direction="in" xd:interfaceRef="myMacAddress_V" xd:busTypeRef="register" xd:dataWidth="48" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="2" xd:worst-case="2" xd:average-case="2"/>
+  <xd:resourceEstimates xd:LUT="1521" xd:FF="1076" xd:BRAM="15" xd:DSP="0"/>
+</xd:acceleratorMap>

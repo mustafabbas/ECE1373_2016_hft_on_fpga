@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="udpPortReq" xd:componentRef="udpPortReq" xd:initiationInterval="1" xd:clockPeriod="3.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="txRequestPort" xd:originalName="txRequestPort" xd:direction="out" xd:interfaceRef="txRequestPort" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxReplyPort" xd:originalName="rxReplyPort" xd:direction="in" xd:interfaceRef="rxReplyPort" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="7" xd:FF="3" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

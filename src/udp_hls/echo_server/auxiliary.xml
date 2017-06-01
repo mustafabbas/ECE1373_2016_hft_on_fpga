@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="echo_server_application" xd:componentRef="echo_server_application" xd:initiationInterval="1" xd:clockPeriod="6.660000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="openConStatus.sessionID" xd:originalName="openConStatus" xd:direction="in" xd:interfaceRef="s_axis_open_status" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="openConStatus.success" xd:originalName="openConStatus" xd:direction="in" xd:interfaceRef="s_axis_open_status" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="16:16" xd:dataWidth="1"/>
+  <xd:arg xd:name="listenPortStatus" xd:originalName="listenPortStatus" xd:direction="in" xd:interfaceRef="s_axis_listen_port_status" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="notifications.sessionID" xd:originalName="notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="notifications.length" xd:originalName="notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="notifications.ipAddress" xd:originalName="notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:32" xd:dataWidth="32"/>
+  <xd:arg xd:name="notifications.dstPort" xd:originalName="notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="79:64" xd:dataWidth="16"/>
+  <xd:arg xd:name="notifications.closed" xd:originalName="notifications" xd:direction="in" xd:interfaceRef="s_axis_notifications" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="80:80" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxMetaData" xd:originalName="rxMetaData" xd:direction="in" xd:interfaceRef="s_axis_rx_metadata" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxData.data" xd:originalName="rxData" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:0" xd:dataWidth="64"/>
+  <xd:arg xd:name="rxData.keep" xd:originalName="rxData" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="71:64" xd:dataWidth="8"/>
+  <xd:arg xd:name="rxData.last" xd:originalName="rxData" xd:direction="in" xd:interfaceRef="s_axis_rx_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="72:72" xd:dataWidth="1"/>
+  <xd:arg xd:name="txStatus" xd:originalName="txStatus" xd:direction="in" xd:interfaceRef="s_axis_tx_status" xd:busTypeRef="axis" xd:dataWidth="17"/>
+  <xd:arg xd:name="openConnection.ip_address" xd:originalName="openConnection" xd:direction="out" xd:interfaceRef="m_axis_open_connection" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:0" xd:dataWidth="32"/>
+  <xd:arg xd:name="openConnection.ip_port" xd:originalName="openConnection" xd:direction="out" xd:interfaceRef="m_axis_open_connection" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:32" xd:dataWidth="16"/>
+  <xd:arg xd:name="closeConnection" xd:originalName="closeConnection" xd:direction="out" xd:interfaceRef="m_axis_close_connection" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="listenPort" xd:originalName="listenPort" xd:direction="out" xd:interfaceRef="m_axis_listen_port" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="readRequest.sessionID" xd:originalName="readRequest" xd:direction="out" xd:interfaceRef="m_axis_read_package" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="readRequest.length" xd:originalName="readRequest" xd:direction="out" xd:interfaceRef="m_axis_read_package" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="31:16" xd:dataWidth="16"/>
+  <xd:arg xd:name="txMetaData" xd:originalName="txMetaData" xd:direction="out" xd:interfaceRef="m_axis_tx_metadata" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="txData.data" xd:originalName="txData" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:0" xd:dataWidth="64"/>
+  <xd:arg xd:name="txData.keep" xd:originalName="txData" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="71:64" xd:dataWidth="8"/>
+  <xd:arg xd:name="txData.last" xd:originalName="txData" xd:direction="out" xd:interfaceRef="m_axis_tx_data" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="72:72" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="1" xd:average-case="1"/>
+  <xd:resourceEstimates xd:LUT="13" xd:FF="150" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="timer_stream_adapter" xd:componentRef="timer_stream_adapter" xd:initiationInterval="1" xd:clockPeriod="4.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="asyncTime" xd:originalName="asyncTime" xd:direction="in" xd:interfaceRef="asyncTime_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="64"/>
+  <xd:arg xd:name="synchTime_1" xd:originalName="synchTime_1" xd:direction="out" xd:interfaceRef="synchTime_1" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="synchTime_2" xd:originalName="synchTime_2" xd:direction="out" xd:interfaceRef="synchTime_2" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="3" xd:FF="2" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

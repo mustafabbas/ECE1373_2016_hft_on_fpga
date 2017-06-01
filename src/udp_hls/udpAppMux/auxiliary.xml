@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="udpAppMux" xd:componentRef="udpAppMux" xd:initiationInterval="1" xd:clockPeriod="3.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="all">
+  <xd:arg xd:name="rxDataNetwork.data" xd:originalName="rxDataNetwork" xd:direction="in" xd:interfaceRef="rxDataNetwork" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="rxDataNetwork.keep" xd:originalName="rxDataNetwork" xd:direction="in" xd:interfaceRef="rxDataNetwork" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="rxDataNetwork.last" xd:originalName="rxDataNetwork" xd:direction="in" xd:interfaceRef="rxDataNetwork" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxMetadataNetwork.sourceSocket.port" xd:originalName="rxMetadataNetwork" xd:direction="in" xd:interfaceRef="rxMetadataNetwork" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxMetadataNetwork.sourceSocket.addr" xd:originalName="rxMetadataNetwork" xd:direction="in" xd:interfaceRef="rxMetadataNetwork" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="rxMetadataNetwork.destinationSocket.port" xd:originalName="rxMetadataNetwork" xd:direction="in" xd:interfaceRef="rxMetadataNetwork" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxMetadataNetwork.destinationSocket.addr" xd:originalName="rxMetadataNetwork" xd:direction="in" xd:interfaceRef="rxMetadataNetwork" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="txDataFAST.data" xd:originalName="txDataFAST" xd:direction="out" xd:interfaceRef="txDataFAST" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="txDataFAST.keep" xd:originalName="txDataFAST" xd:direction="out" xd:interfaceRef="txDataFAST" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="txDataFAST.last" xd:originalName="txDataFAST" xd:direction="out" xd:interfaceRef="txDataFAST" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="txMetadataFAST.sourceSocket.port" xd:originalName="txMetadataFAST" xd:direction="out" xd:interfaceRef="txMetadataFAST" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="txMetadataFAST.sourceSocket.addr" xd:originalName="txMetadataFAST" xd:direction="out" xd:interfaceRef="txMetadataFAST" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="txMetadataFAST.destinationSocket.port" xd:originalName="txMetadataFAST" xd:direction="out" xd:interfaceRef="txMetadataFAST" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="txMetadataFAST.destinationSocket.addr" xd:originalName="txMetadataFAST" xd:direction="out" xd:interfaceRef="txMetadataFAST" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="txTimeFAST" xd:originalName="txTimeFAST" xd:direction="out" xd:interfaceRef="txTimeFAST" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="txRequestPortNetwork" xd:originalName="txRequestPortNetwork" xd:direction="out" xd:interfaceRef="txRequestPortNetwork" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxReplyPortNetwork" xd:originalName="rxReplyPortNetwork" xd:direction="in" xd:interfaceRef="rxReplyPortNetwork" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxRequestPortFAST" xd:originalName="rxRequestPortFAST" xd:direction="in" xd:interfaceRef="rxRequestPortFAST" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="txReplyPortFAST" xd:originalName="txReplyPortFAST" xd:direction="out" xd:interfaceRef="txReplyPortFAST" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxRequestPortMonitor" xd:originalName="rxRequestPortMonitor" xd:direction="in" xd:interfaceRef="rxRequestPortMonitor" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="txReplyPortMonitor" xd:originalName="txReplyPortMonitor" xd:direction="out" xd:interfaceRef="txReplyPortMonitor" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxDataMonitor.data" xd:originalName="rxDataMonitor" xd:direction="in" xd:interfaceRef="rxDataMonitor" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="rxDataMonitor.keep" xd:originalName="rxDataMonitor" xd:direction="in" xd:interfaceRef="rxDataMonitor" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="rxDataMonitor.last" xd:originalName="rxDataMonitor" xd:direction="in" xd:interfaceRef="rxDataMonitor" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxMetadataMonitor.sourceSocket.port" xd:originalName="rxMetadataMonitor" xd:direction="in" xd:interfaceRef="rxMetadataMonitor" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxMetadataMonitor.sourceSocket.addr" xd:originalName="rxMetadataMonitor" xd:direction="in" xd:interfaceRef="rxMetadataMonitor" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="rxMetadataMonitor.destinationSocket.port" xd:originalName="rxMetadataMonitor" xd:direction="in" xd:interfaceRef="rxMetadataMonitor" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxMetadataMonitor.destinationSocket.addr" xd:originalName="rxMetadataMonitor" xd:direction="in" xd:interfaceRef="rxMetadataMonitor" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="rxLengthMonitor" xd:originalName="rxLengthMonitor" xd:direction="in" xd:interfaceRef="rxLengthMonitor" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxDataFAST.data" xd:originalName="rxDataFAST" xd:direction="in" xd:interfaceRef="rxDataFAST" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="rxDataFAST.keep" xd:originalName="rxDataFAST" xd:direction="in" xd:interfaceRef="rxDataFAST" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="rxDataFAST.last" xd:originalName="rxDataFAST" xd:direction="in" xd:interfaceRef="rxDataFAST" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="rxMetadataFAST.sourceSocket.port" xd:originalName="rxMetadataFAST" xd:direction="in" xd:interfaceRef="rxMetadataFAST" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxMetadataFAST.sourceSocket.addr" xd:originalName="rxMetadataFAST" xd:direction="in" xd:interfaceRef="rxMetadataFAST" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="rxMetadataFAST.destinationSocket.port" xd:originalName="rxMetadataFAST" xd:direction="in" xd:interfaceRef="rxMetadataFAST" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxMetadataFAST.destinationSocket.addr" xd:originalName="rxMetadataFAST" xd:direction="in" xd:interfaceRef="rxMetadataFAST" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="rxLengthFAST" xd:originalName="rxLengthFAST" xd:direction="in" xd:interfaceRef="rxLengthFAST" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="rxTimeFAST" xd:originalName="rxTimeFAST" xd:direction="in" xd:interfaceRef="rxTimeFAST" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="txDataNetwork.data" xd:originalName="txDataNetwork" xd:direction="out" xd:interfaceRef="txDataNetwork" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="txDataNetwork.keep" xd:originalName="txDataNetwork" xd:direction="out" xd:interfaceRef="txDataNetwork" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="txDataNetwork.last" xd:originalName="txDataNetwork" xd:direction="out" xd:interfaceRef="txDataNetwork" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="txMetadataNetwork.sourceSocket.port" xd:originalName="txMetadataNetwork" xd:direction="out" xd:interfaceRef="txMetadataNetwork" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="txMetadataNetwork.sourceSocket.addr" xd:originalName="txMetadataNetwork" xd:direction="out" xd:interfaceRef="txMetadataNetwork" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="txMetadataNetwork.destinationSocket.port" xd:originalName="txMetadataNetwork" xd:direction="out" xd:interfaceRef="txMetadataNetwork" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="txMetadataNetwork.destinationSocket.addr" xd:originalName="txMetadataNetwork" xd:direction="out" xd:interfaceRef="txMetadataNetwork" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="txLengthNetwork" xd:originalName="txLengthNetwork" xd:direction="out" xd:interfaceRef="txLengthNetwork" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="time_1" xd:originalName="time_1" xd:direction="in" xd:interfaceRef="time_1" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="time_2" xd:originalName="time_2" xd:direction="in" xd:interfaceRef="time_2" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:latencyEstimates xd:best-case="0" xd:worst-case="0" xd:average-case="0"/>
+  <xd:resourceEstimates xd:LUT="338" xd:FF="112" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

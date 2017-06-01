@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="arp_server" xd:componentRef="arp_server" xd:initiationInterval="2" xd:clockPeriod="6.660000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="arpDataIn.data" xd:originalName="arpDataIn" xd:direction="in" xd:interfaceRef="arpDataIn" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="arpDataIn.keep" xd:originalName="arpDataIn" xd:direction="in" xd:interfaceRef="arpDataIn" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="arpDataIn.last" xd:originalName="arpDataIn" xd:direction="in" xd:interfaceRef="arpDataIn" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="macIpEncode_req" xd:originalName="macIpEncode_req" xd:direction="in" xd:interfaceRef="macIpEncode_req" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="arpDataOut.data" xd:originalName="arpDataOut" xd:direction="out" xd:interfaceRef="arpDataOut" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="arpDataOut.keep" xd:originalName="arpDataOut" xd:direction="out" xd:interfaceRef="arpDataOut" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="arpDataOut.last" xd:originalName="arpDataOut" xd:direction="out" xd:interfaceRef="arpDataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="macIpEncode_rsp.macAddress" xd:originalName="macIpEncode_rsp" xd:direction="out" xd:interfaceRef="macIpEncode_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:0" xd:dataWidth="48"/>
+  <xd:arg xd:name="macIpEncode_rsp.hit" xd:originalName="macIpEncode_rsp" xd:direction="out" xd:interfaceRef="macIpEncode_rsp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="48:48" xd:dataWidth="1"/>
+  <xd:arg xd:name="macLookup_req.source" xd:originalName="macLookup_req" xd:direction="out" xd:interfaceRef="macLookup_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1"/>
+  <xd:arg xd:name="macLookup_req.key" xd:originalName="macLookup_req" xd:direction="out" xd:interfaceRef="macLookup_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="32:1" xd:dataWidth="32"/>
+  <xd:arg xd:name="macLookup_resp.hit" xd:originalName="macLookup_resp" xd:direction="in" xd:interfaceRef="macLookup_resp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1"/>
+  <xd:arg xd:name="macLookup_resp.value" xd:originalName="macLookup_resp" xd:direction="in" xd:interfaceRef="macLookup_resp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="48:1" xd:dataWidth="48"/>
+  <xd:arg xd:name="macUpdate_req.source" xd:originalName="macUpdate_req" xd:direction="out" xd:interfaceRef="macUpdate_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1"/>
+  <xd:arg xd:name="macUpdate_req.op" xd:originalName="macUpdate_req" xd:direction="out" xd:interfaceRef="macUpdate_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="1:1" xd:dataWidth="1"/>
+  <xd:arg xd:name="macUpdate_req.value" xd:originalName="macUpdate_req" xd:direction="out" xd:interfaceRef="macUpdate_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="49:2" xd:dataWidth="48"/>
+  <xd:arg xd:name="macUpdate_req.key" xd:originalName="macUpdate_req" xd:direction="out" xd:interfaceRef="macUpdate_req" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="81:50" xd:dataWidth="32"/>
+  <xd:arg xd:name="macUpdate_resp.source" xd:originalName="macUpdate_resp" xd:direction="in" xd:interfaceRef="macUpdate_resp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="0:0" xd:dataWidth="1"/>
+  <xd:arg xd:name="macUpdate_resp.op" xd:originalName="macUpdate_resp" xd:direction="in" xd:interfaceRef="macUpdate_resp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="1:1" xd:dataWidth="1"/>
+  <xd:arg xd:name="macUpdate_resp.value" xd:originalName="macUpdate_resp" xd:direction="in" xd:interfaceRef="macUpdate_resp" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="49:2" xd:dataWidth="48"/>
+  <xd:arg xd:name="regIpAddress" xd:originalName="regIpAddress" xd:direction="in" xd:interfaceRef="regIpAddress_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="myMacAddress" xd:originalName="myMacAddress" xd:direction="in" xd:interfaceRef="myMacAddress_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="48"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="1" xd:average-case="1"/>
+  <xd:resourceEstimates xd:LUT="1192" xd:FF="1193" xd:BRAM="11" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="udpLoopback" xd:componentRef="udpLoopback" xd:initiationInterval="2" xd:clockPeriod="6.660000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="lbRxDataIn.data" xd:originalName="lbRxDataIn" xd:direction="in" xd:interfaceRef="lbRxDataIn" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="lbRxDataIn.keep" xd:originalName="lbRxDataIn" xd:direction="in" xd:interfaceRef="lbRxDataIn" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="lbRxDataIn.last" xd:originalName="lbRxDataIn" xd:direction="in" xd:interfaceRef="lbRxDataIn" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="lbRxMetadataIn.sourceSocket.port" xd:originalName="lbRxMetadataIn" xd:direction="in" xd:interfaceRef="lbRxMetadataIn" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="lbRxMetadataIn.sourceSocket.addr" xd:originalName="lbRxMetadataIn" xd:direction="in" xd:interfaceRef="lbRxMetadataIn" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="lbRxMetadataIn.destinationSocket.port" xd:originalName="lbRxMetadataIn" xd:direction="in" xd:interfaceRef="lbRxMetadataIn" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="lbRxMetadataIn.destinationSocket.addr" xd:originalName="lbRxMetadataIn" xd:direction="in" xd:interfaceRef="lbRxMetadataIn" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="lbRequestPortOpenOut" xd:originalName="lbRequestPortOpenOut" xd:direction="out" xd:interfaceRef="lbRequestPortOpenOut" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="lbPortOpenReplyIn" xd:originalName="lbPortOpenReplyIn" xd:direction="in" xd:interfaceRef="lbPortOpenReplyIn" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="lbTxDataOut.data" xd:originalName="lbTxDataOut" xd:direction="out" xd:interfaceRef="lbTxDataOut" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="lbTxDataOut.keep" xd:originalName="lbTxDataOut" xd:direction="out" xd:interfaceRef="lbTxDataOut" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="lbTxDataOut.last" xd:originalName="lbTxDataOut" xd:direction="out" xd:interfaceRef="lbTxDataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="lbTxMetadataOut.sourceSocket.port" xd:originalName="lbTxMetadataOut" xd:direction="out" xd:interfaceRef="lbTxMetadataOut" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="lbTxMetadataOut.sourceSocket.addr" xd:originalName="lbTxMetadataOut" xd:direction="out" xd:interfaceRef="lbTxMetadataOut" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="lbTxMetadataOut.destinationSocket.port" xd:originalName="lbTxMetadataOut" xd:direction="out" xd:interfaceRef="lbTxMetadataOut" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="lbTxMetadataOut.destinationSocket.addr" xd:originalName="lbTxMetadataOut" xd:direction="out" xd:interfaceRef="lbTxMetadataOut" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="lbTxLengthOut" xd:originalName="lbTxLengthOut" xd:direction="out" xd:interfaceRef="lbTxLengthOut" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="1" xd:average-case="1"/>
+  <xd:resourceEstimates xd:LUT="549" xd:FF="188" xd:BRAM="5" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.3 (64-bit)
+# SW Build 1682563 on Mon Oct 10 19:07:26 MDT 2016
+# IP Build 1681267 on Mon Oct 10 21:28:31 MDT 2016
+# Start of session at: Fri Mar 10 14:17:06 2017
+# Process ID: 717
+# Current directory: /home/madanie1/Documents/masc/vivado_projects/udpTestApps/udpLowercase/udpLowercase_prj/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/madanie1/Documents/masc/vivado_projects/udpTestApps/udpLowercase/udpLowercase_prj/solution1/impl/ip/vivado.log
+# Journal file: /home/madanie1/Documents/masc/vivado_projects/udpTestApps/udpLowercase/udpLowercase_prj/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.3/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 10 14:17:13 2017...

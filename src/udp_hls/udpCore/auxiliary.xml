@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="udp" xd:componentRef="udp" xd:initiationInterval="3" xd:clockPeriod="6.660000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="inputPathInData.data" xd:originalName="inputPathInData" xd:direction="in" xd:interfaceRef="inputPathInData" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="inputPathInData.keep" xd:originalName="inputPathInData" xd:direction="in" xd:interfaceRef="inputPathInData" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="inputPathInData.last" xd:originalName="inputPathInData" xd:direction="in" xd:interfaceRef="inputPathInData" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="inputpathOutData.data" xd:originalName="inputpathOutData" xd:direction="out" xd:interfaceRef="inputpathOutData" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="inputpathOutData.keep" xd:originalName="inputpathOutData" xd:direction="out" xd:interfaceRef="inputpathOutData" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="inputpathOutData.last" xd:originalName="inputpathOutData" xd:direction="out" xd:interfaceRef="inputpathOutData" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="openPort" xd:originalName="openPort" xd:direction="in" xd:interfaceRef="openPort" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="confirmPortStatus" xd:originalName="confirmPortStatus" xd:direction="out" xd:interfaceRef="confirmPortStatus" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="inputPathOutputMetadata.sourceSocket.port" xd:originalName="inputPathOutputMetadata" xd:direction="out" xd:interfaceRef="inputPathOutputMetadata" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="inputPathOutputMetadata.sourceSocket.addr" xd:originalName="inputPathOutputMetadata" xd:direction="out" xd:interfaceRef="inputPathOutputMetadata" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="inputPathOutputMetadata.destinationSocket.port" xd:originalName="inputPathOutputMetadata" xd:direction="out" xd:interfaceRef="inputPathOutputMetadata" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="inputPathOutputMetadata.destinationSocket.addr" xd:originalName="inputPathOutputMetadata" xd:direction="out" xd:interfaceRef="inputPathOutputMetadata" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="portRelease" xd:originalName="portRelease" xd:direction="in" xd:interfaceRef="portRelease" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="outputPathInData.data" xd:originalName="outputPathInData" xd:direction="in" xd:interfaceRef="outputPathInData" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="outputPathInData.keep" xd:originalName="outputPathInData" xd:direction="in" xd:interfaceRef="outputPathInData" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="outputPathInData.last" xd:originalName="outputPathInData" xd:direction="in" xd:interfaceRef="outputPathInData" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="outputPathOutData.data" xd:originalName="outputPathOutData" xd:direction="out" xd:interfaceRef="outputPathOutData" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="outputPathOutData.keep" xd:originalName="outputPathOutData" xd:direction="out" xd:interfaceRef="outputPathOutData" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="outputPathOutData.last" xd:originalName="outputPathOutData" xd:direction="out" xd:interfaceRef="outputPathOutData" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="outputPathInMetadata.sourceSocket.port" xd:originalName="outputPathInMetadata" xd:direction="in" xd:interfaceRef="outputPathInMetadata" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="15:0" xd:dataWidth="16"/>
+  <xd:arg xd:name="outputPathInMetadata.sourceSocket.addr" xd:originalName="outputPathInMetadata" xd:direction="in" xd:interfaceRef="outputPathInMetadata" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="47:16" xd:dataWidth="32"/>
+  <xd:arg xd:name="outputPathInMetadata.destinationSocket.port" xd:originalName="outputPathInMetadata" xd:direction="in" xd:interfaceRef="outputPathInMetadata" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="63:48" xd:dataWidth="16"/>
+  <xd:arg xd:name="outputPathInMetadata.destinationSocket.addr" xd:originalName="outputPathInMetadata" xd:direction="in" xd:interfaceRef="outputPathInMetadata" xd:busTypeRef="axis" xd:dataPack="true" xd:bitMapping="95:64" xd:dataWidth="32"/>
+  <xd:arg xd:name="outputpathInLength" xd:originalName="outputpathInLength" xd:direction="in" xd:interfaceRef="outputpathInLength" xd:busTypeRef="axis" xd:dataWidth="16"/>
+  <xd:arg xd:name="inputPathPortUnreachable.data" xd:originalName="inputPathPortUnreachable" xd:direction="out" xd:interfaceRef="inputPathPortUnreachable" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="inputPathPortUnreachable.keep" xd:originalName="inputPathPortUnreachable" xd:direction="out" xd:interfaceRef="inputPathPortUnreachable" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="inputPathPortUnreachable.last" xd:originalName="inputPathPortUnreachable" xd:direction="out" xd:interfaceRef="inputPathPortUnreachable" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="2" xd:worst-case="2" xd:average-case="2"/>
+  <xd:resourceEstimates xd:LUT="5127" xd:FF="2375" xd:BRAM="53" xd:DSP="0"/>
+</xd:acceleratorMap>

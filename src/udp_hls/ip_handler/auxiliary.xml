@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="ip_handler" xd:componentRef="ip_handler" xd:initiationInterval="4" xd:clockPeriod="6.660000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="dataIn.data" xd:originalName="dataIn" xd:direction="in" xd:interfaceRef="dataIn" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="dataIn.keep" xd:originalName="dataIn" xd:direction="in" xd:interfaceRef="dataIn" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="dataIn.last" xd:originalName="dataIn" xd:direction="in" xd:interfaceRef="dataIn" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="ARPdataOut.data" xd:originalName="ARPdataOut" xd:direction="out" xd:interfaceRef="ARPdataOut" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="ARPdataOut.keep" xd:originalName="ARPdataOut" xd:direction="out" xd:interfaceRef="ARPdataOut" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="ARPdataOut.last" xd:originalName="ARPdataOut" xd:direction="out" xd:interfaceRef="ARPdataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="ICMPdataOut.data" xd:originalName="ICMPdataOut" xd:direction="out" xd:interfaceRef="ICMPdataOut" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="ICMPdataOut.keep" xd:originalName="ICMPdataOut" xd:direction="out" xd:interfaceRef="ICMPdataOut" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="ICMPdataOut.last" xd:originalName="ICMPdataOut" xd:direction="out" xd:interfaceRef="ICMPdataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="ICMPexpDataOut.data" xd:originalName="ICMPexpDataOut" xd:direction="out" xd:interfaceRef="ICMPexpDataOut" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="ICMPexpDataOut.keep" xd:originalName="ICMPexpDataOut" xd:direction="out" xd:interfaceRef="ICMPexpDataOut" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="ICMPexpDataOut.last" xd:originalName="ICMPexpDataOut" xd:direction="out" xd:interfaceRef="ICMPexpDataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="UDPdataOut.data" xd:originalName="UDPdataOut" xd:direction="out" xd:interfaceRef="UDPdataOut" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="UDPdataOut.keep" xd:originalName="UDPdataOut" xd:direction="out" xd:interfaceRef="UDPdataOut" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="UDPdataOut.last" xd:originalName="UDPdataOut" xd:direction="out" xd:interfaceRef="UDPdataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="TCPdataOut.data" xd:originalName="TCPdataOut" xd:direction="out" xd:interfaceRef="TCPdataOut" xd:busTypeRef="axis" xd:dataWidth="64"/>
+  <xd:arg xd:name="TCPdataOut.keep" xd:originalName="TCPdataOut" xd:direction="out" xd:interfaceRef="TCPdataOut" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="TCPdataOut.last" xd:originalName="TCPdataOut" xd:direction="out" xd:interfaceRef="TCPdataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="regIpAddress" xd:originalName="regIpAddress" xd:direction="in" xd:interfaceRef="regIpAddress_V" xd:busTypeRef="register" xd:dataWidth="32" xd:handshakeRef="ap_none"/>
+  <xd:arg xd:name="myMacAddress" xd:originalName="myMacAddress" xd:direction="in" xd:interfaceRef="myMacAddress_V" xd:busTypeRef="register" xd:dataWidth="48" xd:handshakeRef="ap_none"/>
+  <xd:latencyEstimates xd:best-case="3" xd:worst-case="3" xd:average-case="3"/>
+  <xd:resourceEstimates xd:LUT="3522" xd:FF="1779" xd:BRAM="5" xd:DSP="0"/>
+</xd:acceleratorMap>
