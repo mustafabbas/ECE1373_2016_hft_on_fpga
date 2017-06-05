@@ -45,7 +45,7 @@ Step 3: Program the FPGA
 
 - Export bitstream and launch the sdk if you wish to program the microblaze (step not needed)
 
-- program the device using the sdk src file fond in src/sdk.c [TODO: must add this file]
+- program the device using the sdk src files found in src/sdk_src
 
 Step 3: Run the scripts
 
