@@ -82,7 +82,7 @@ struct metadata
 // Data types
 typedef ap_fixed<16, 8> fix16;  // 16-bit fixed point with 8 fractional bits
 typedef ap_uint<1> bit;         // 1-bit of data
-typedef ap_uint<2> uint2;       // 2-bits of data
+typedef ap_uint<3> uint3;       // 2-bits of data
 typedef ap_uint<8> uint8;       // 1-byte of data
 typedef ap_uint<32> uint32;     // 4-bytes of data
 typedef ap_uint<64> uint64;     // 8-bytes of data
@@ -100,7 +100,7 @@ struct order
     ap_fixed<16, 8> price;
     ap_uint<8> size;
     ap_uint<32> orderID;
-    ap_uint<2> type;
+    ap_uint<3> type;
 };
 
 void fast_protocol(stream<axiWord>& lbRxDataIn,

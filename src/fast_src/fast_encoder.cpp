@@ -145,7 +145,7 @@ void Fast_Encoder::encode_uint_from_uint8(uint8 & decoded_uint8,
     encoded_message[message_offset++] = (0x80 | (decoded_uint8 & 0x7F));
 }
 
-void Fast_Encoder::encode_uint_from_uint2(uint2 & decoded_uint2,
+void Fast_Encoder::encode_uint_from_uint2(uint3 & decoded_uint2,
                                           unsigned & message_offset,
                                           uint8 encoded_message[MESSAGE_BUFF_SIZE])
 {

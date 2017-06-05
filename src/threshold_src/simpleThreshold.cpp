@@ -49,13 +49,13 @@ void simple_threshold(stream<order> &top_bid,
 		metadata meta_buffer = incoming_meta.read();
 		Time time_buffer = incoming_time.read();
 
-		if(prev_bid.orderID != bid.orderID && bid.price > bid_threshold){
+		if(bid.price > bid_threshold){
 			outgoing_order.write(market_sell);
 			outgoing_meta.write(meta_buffer);
 			outgoing_time.write(time_buffer);
 		}
 
-		if(prev_ask.orderID != ask.orderID && ask.price < bid_threshold){
+		if(ask.price < bid_threshold){
 			outgoing_order.write(market_buy);
 			outgoing_meta.write(meta_buffer);
 			outgoing_time.write(time_buffer);

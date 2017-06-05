@@ -113,7 +113,7 @@ void rxPath(stream<axiWord>& lbRxDataIn,
             fix16 price_buff = 0;
             uint8 size_buff = 0;
             uint32 orderID_buff = 0;
-            uint2 order_type_buff = 0;
+            uint3 order_type_buff = 0;
 
             unsigned message_offset = 2;
 
@@ -228,7 +228,7 @@ void rxPath(stream<axiWord>& lbRxDataIn,
             fix16 price_buff = 0;
             uint8 size_buff = 0;
             uint32 orderID_buff = 0;
-            uint2 order_type_buff = 0;
+            uint3 order_type_buff = 0;
 
             unsigned message_offset = 2;
 

@@ -37,7 +37,7 @@ private:
                                        unsigned & message_offset,
                                        uint8 encoded_message[MESSAGE_BUFF_SIZE]);
 
-    static void encode_uint_from_uint2(uint2 & decoded_uint2,
+    static void encode_uint_from_uint2(uint3 & decoded_uint2,
                                        unsigned & message_offset,
                                        uint8 encoded_message[MESSAGE_BUFF_SIZE]);
 

@@ -23,7 +23,7 @@ void Fast_Decoder::decode_fast_message(uint64 & first_packet,
     fix16 price_buff = 0;
     uint8 size_buff = 0;
     uint32 orderID_buff = 0;
-    uint2 order_type_buff = 0;
+    uint3 order_type_buff = 0;
 
     unsigned message_offset = 2;
 
@@ -243,7 +243,7 @@ void Fast_Decoder::decode_uint_to_uint32(uint8 encoded_message[MESSAGE_BUFF_SIZE
 
 void Fast_Decoder::decode_uint_to_uint2(uint8 encoded_message[MESSAGE_BUFF_SIZE],
                                         unsigned message_offset,
-                                        uint2 & decoded_uint2)
+                                        uint3 & decoded_uint2)
 {
     decoded_uint2 = (encoded_message[message_offset] & VALID_DATA);
 }
