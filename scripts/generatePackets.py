@@ -155,9 +155,10 @@ def ToFastFP(price):
 
    exp=0;
    trailing_digits , _ = math.modf(price); 
-   while(trailing_digits and exp > -4): # only allow up to 4 sig digs
+   while(trailing_digits and exp > -3): # only allow up to 4 sig digs
       exp = exp - 1 
       trailing_digits , _ = math.modf(price*math.pow(10,-exp)); 
+   
    mantissa = int(round(price*math.pow(10,-exp)))
    return (exp,mantissa)
 
